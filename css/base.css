@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+p{
+    margin: 0;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+    height: 100%
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    box-shadow: 0px, 1px 4 #CCC;
+    color: #FE5000;
+    
+}
+.logo-container{
+    float: left;
+
+}
+.logo{
+    float: left;
+    background:url("img/logo_naranja.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 105.6px;;
+}
+.logo-text{
+    padding: 0;
+    margin: 0;
+    padding-top: 14px;
+    font-size: 1.6em;
+    padding-left: 67px;
+}
+.menu_container{
+    float: right;
+    height: 60px;
+    width: 620px;
+}
+.menu_container menu{
+    margin: 0;
+}
+.menu_container menu ul{
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+}
+
+.menu_container menu ul li{
+    display: block;
+    width: calc(100% / 6);
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    height:60px;
+    font-weight: bolder
+}
+.no-line{
+    line-height: inherit !important;
+}
+.menu_container menu ul li a{
+    color: #FE5000;
+}
+.menu_container menu ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #FE5000;
+}
+main .landscape{
+    width: 100%;
+    height: 600px;
+    background: url("img/landscape.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed
+}
+main .phrase_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+.flip{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.section{
+    padding-left: 64px;
+    padding-right: 64px;
+}
+main .phrase_container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top:-30px
+}
+main .phrase_container .container_text{
+    top: -200px;
+    width: calc(100% - 240px);
+}
+main .phrase_container .container_text p{
+    margin: auto;
+    width: 450px;
+    text-align: center;
+    color: #777;
+    padding-top: 80px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-style: italic;
+
+}
+main .phrase_container .auto_arm{
+    width: 120px;
+    height: 180px;
+    background: url("img/robotic_arm.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .about{
+    background: white;
+    padding: 64px;
+    padding-top: 16px;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 2px rgba(0,0,0, 0.1);
+}
+
+main .about h2{
+    color: #FE5000;
+    text-align: center;
+}
+main .about p{
+    text-shadow: 0px 0px 2px rgba(66,66,66, 0.3);
+    text-align: center;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 8px;
+}
+main .services{
+    padding: 0 !important;
+    padding: 64px;
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 2px rgba(0,0,0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .service{
+    width: calc(100% /2);
+    min-height: 350px;
+    position: relative;
+}
+.services #testing{
+    background: url("img/testing.jpg");
+}
+.services #automation{
+    background: url("img/automation.jpg");
+}
+.services #design{
+    background: url("img/design.jpg");
+    background-size: 100% !important;
+
+}
+.services .weoffer{
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.service .descriptor{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: block;
+    padding: 8px;
+    font-size: 1.2em;
+    background: rgba(230, 230, 230, 0.822);
+}
+main .works{
+    padding-top: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding-bottom: 1.5em;
+    justify-content: center;
+
+
+}
+main .works .work{
+    width: 250px;
+    height: 240px;
+    background: white;
+    margin-right: 1.5em;
+    box-shadow: 1px 2px 2px rgba(0,0,0, 0.1);
+}
+
+main .works .work .work_photo{
+    background: rgba(6, 34, 77, 0.637);
+    width: 100%;
+    height: 200px
+}
+main .works .work .work_info{
+    padding: 8px;
+}
+
+main .clients_container{
+    background: white;
+    padding-top:16px;
+    width: 100%;
+    box-shadow: 1px 2px 2px rgba(0,0,0, 0.1);
+    padding-bottom: 1.5em;
+}
+main .clients_container h2{
+    color:#FE5000;
+    text-align: center
+}
+main .clients{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+}
+main .clients_container .clients .client{
+    margin: 1em;
+    padding: 8px;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    border: 2px solid #2D2926;
+    overflow: hidden
+}
+main .clients .client .client_logo_image{
+    width: 180px;
+    height: 180px;
+    background: url("img/delphi-logo-png-2.png");
+    background-position: center;
+    background-size: contain;
+    background-attachment: initial;
+}
+footer{
+    color: #eee;
+    height: 300px;
+    background-color: #2D2926
+}
+footer .footer_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 64px;
+    padding-left: 64px;
+    flex-direction:row;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+.footer_logo{
+    text-align: center;
+}
+.section_footer{
+    width: calc(100% / 3 );
+    height: 200px;
+    padding:32px;
+
+}
+.contact_info{
+    padding-left: 0px
+}
+.contact_info ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact_info ul li{
+    font-size: 1.1em;
+    display: block;
+    height: 3em
+}
+.contact_info ul li i{
+    margin: 4px;
+}
+.footer_partners{
+    border-left: 3px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+
+}
+.partner{
+    width: calc(100% / 2)
+}
+footer .trade{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+}
+a:link{
+    font-style: none;
+
+    color:white;
+}
+a:visited{
+    color:white;
+}
+a:active{
+    color:white;
+}
