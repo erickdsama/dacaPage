@@ -133,10 +133,10 @@ main .phrase_container .container_text p{
     font-style: italic;
 
 }
-ul{
-    list-style: none;
-    padding: 0;
-}
+/*ul{*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
 .info-sections{
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +150,10 @@ ul{
 }
 .sectionleft{
     text-align: left;
+}
+.sectionleft ul{
+    /*list-style: inherit !important;*/
+    /*padding: 10px !important;*/
 }
 .sectionright{
     text-align: right
@@ -224,7 +228,6 @@ main .services{
     margin: 8px;
     margin-top: 0;
     margin-bottom: 0;
-    
 
 }
 
