@@ -68,7 +68,7 @@ header{
 
 }
 
-.menu_container menu ul li{
+.menu_container menu ul a{
     display: block;
     width: calc(100% / 6);
     line-height: 60px;
@@ -80,10 +80,10 @@ header{
 .no-line{
     line-height: inherit !important;
 }
-.menu_container menu ul li a{
+.menu_container menu ul a li{
     color: #FE5000;
 }
-.menu_container menu ul li:hover{
+.menu_container menu ul a li:hover{
     cursor: pointer;
     border-bottom: 1px solid #FE5000;
 }
