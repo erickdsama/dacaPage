@@ -1,0 +1,12 @@
+version: '3'
+services:
+    web:
+        env_file:
+            - .env_flask
+        build: .
+        ports:
+            - "5001:5001"
+        volumes:
+            - .:/daca
+        expose:
+            - 5001
